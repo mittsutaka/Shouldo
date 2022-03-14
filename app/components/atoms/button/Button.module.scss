@@ -1,0 +1,23 @@
+@import "../../../styles/variables.scss";
+
+.btn {
+  cursor: pointer;
+  color: $whiteColor;
+  padding: 8px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+
+  &:hover{
+    opacity: 0.8;
+  }
+
+  &-primary{
+    background-color: $mainColor;
+  }
+
+  &-secondory{
+    background-color: $subColor;
+  }
+}
