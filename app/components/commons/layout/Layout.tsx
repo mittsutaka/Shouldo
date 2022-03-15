@@ -5,7 +5,7 @@ interface LayoutProps {
   }
 export const Layout=(props:LayoutProps)=>{
     return (
-        <div className="container mx-auto">
+        <div className="">
             <SideMenu className='pt-8'/>
             <main className="pl-24">{props.children}</main>
         </div>
