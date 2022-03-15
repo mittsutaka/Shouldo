@@ -6,8 +6,8 @@ interface LayoutProps {
 export const Layout=(props:LayoutProps)=>{
     return (
         <div className="">
-            <SideMenu className='pt-8'/>
-            <main className="pl-24">{props.children}</main>
+            <SideMenu className='w-48'/>
+            <main className="pl-48">{props.children}</main>
         </div>
     )
 }

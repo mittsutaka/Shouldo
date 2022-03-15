@@ -24,7 +24,7 @@ const menus: Menu[] = [
 
 export const SideMenu = (props: SideMenuProps) => {
   return (
-    <div className={`bg-sky-900 w-48 h-screen  lg:block fixed z-20 ${props.className}}`}>
+    <div className={`bg-sky-900 h-screen lg:block fixed z-20 ${props.className}`}>
       <div className="h-20 text-2xl text-orange-500 flex justify-center items-center border-slate-400 border-b-2">
         SHOULDo
       </div>
