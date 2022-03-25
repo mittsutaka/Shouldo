@@ -5,9 +5,9 @@ interface LayoutProps {
   }
 export const Layout=(props:LayoutProps)=>{
     return (
-        <div className="">
+        <div className="flex">
             <SideMenu className='w-48'/>
-            <main className="pl-48">{props.children}</main>
+            <main className="flex-1">{props.children}</main>
         </div>
     )
 }
