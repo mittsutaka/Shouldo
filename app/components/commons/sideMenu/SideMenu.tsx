@@ -9,14 +9,17 @@ interface Menu {
   label: string;
   icon?: string;
   link: string;
+  id: number;
 }
 
 const menus: Menu[] = [
   {
+    id: 1,
     label: "タスク",
     link: "#",
   },
   {
+    id: 2,
     label: "グループ",
     link: "#",
   },
@@ -29,7 +32,7 @@ export const SideMenu = (props: SideMenuProps) => {
       <div className="text-neutral-900">
         {menus.map((menu) => {
           return (
-            <div className=" hover:bg-neutral-200 px-8 py-4 flex justify-center cursor-pointer">
+            <div className=" hover:bg-neutral-200 px-8 py-4 flex justify-center cursor-pointer" key={menu.id}>
               <Link href={"#"}>
                 <a className="cursor-pointer">{menu.label}</a>
               </Link>
