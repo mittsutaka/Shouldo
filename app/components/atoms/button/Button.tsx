@@ -1,11 +1,9 @@
-import { MouseEventHandler } from "react";
+import { ComponentProps } from "react";
 import styles from "./Button.module.scss";
 
-interface ButtonProps {
+interface ButtonProps extends ComponentProps<"button"> {
   label: string;
-  children?: JSX.Element | string;
   btnType?: string;
-  onClick?: MouseEventHandler;
 }
 
 export const Button = (props: ButtonProps) => {
